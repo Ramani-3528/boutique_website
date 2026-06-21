@@ -25,8 +25,8 @@ body{
 
 :root {
   --primarycolor: #391849;
-  --secondarycolor: #815d91;
-  --tertiararyColor: #9e7bad;
+  --secondarycolor: #6e4f7c;
+  --tertiararyColor: #a983b9;
   --lightColor: #e8d7ec;
   --textColor: #ad841e;
   --ffPrimary: "Charm", cursive;
@@ -121,10 +121,11 @@ footer {
 
 h1 {
   font-family: var(--ffPrimary);
-  color: var(--primarycolor);
+  color: var(--secondarycolor);
   font-size: 5rem;
   font-weight: 800;
   font-style: italic;
+  text-shadow: 2px 2px 4px #271032;
 }
 
 h2 {
@@ -166,23 +167,57 @@ li {
 }
 
 button {
-  background-color: var(--tertiararyColor);
-  font-family: var(--ffTertiarary);
-  font-size: 2rem;
-  color: var(--lightColor);
-  padding: 1.5rem 2rem;
+  font-family: var(--ffSecondary);
+  background: #391849;
+  position: relative;
+  padding: 13px 15px;
+  box-shadow: 2px 3px 5px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
   border: none;
-  border-radius: 3rem;
+  border-radius: 25px;
+  box-shadow: 4px 3px 10px var(--primarycolor);
+  /* outline: none; */
+  overflow: hidden;
+  color: var(--lightColor);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+button span {
+  margin: 10px;
+}
+
+button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
 }
 
 button:hover {
-  background: var(--primarycolor);
-  color: var(--tertiararyColor);
+  color: var(--primarycolor);
+  /* border: 1px solid rgb(40, 144, 241); */
 }
 
-button:active {
-  border: 0.5rem solid var(--tertiararyColor);
+button:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(252, 254, 255);
 }
+ 
 
 /* NavBar*/
 .navBar {
