@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meraki Atlier | Contacts</title>
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./navLinks.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./navLinks.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -73,6 +74,7 @@
                                 <input type="tel" id="mobile" placeholder="Enter Your Mobile Number" required>
                                 <input type="text" id="message" placeholder="Your Message" required>
                                 <button type="submit">Send Message</button>
+                                <p id="statusMessage"></p>
                             </form>
                         </div>
                     </div>
@@ -81,17 +83,54 @@
         </section>
     </main>
     <footer>
-        <div class="copyrights">
-            <div class="copyrightsContainer">
-                <div class="copyrightsBody">
-                    <div class="copyrightsBlock">
-                        <div class="copyrightsBox">
-                            <p> Copyright @ 2025 <span>Meraki Emrovibes </span>All Rights Reserved.</p>
+        <div class="details">
+            <div class="detailsContainer dflex">
+                <div class="detailsBody grid-4">
+                    <div class="WorksBlock">
+                        <div class="worksBox">
+                            <h4>Our Works</h4>
+                            <p>Custom stitching</p>
+                            <p>Embroidery work</p>
+                            <p>Aari work</p>
+                            <p>Handcrafted Accessories</p>
                         </div>
+                    </div>
+                    <div class="timeBlock">
+                        <div class="timeBox">
+                            <h4>Working Hours</h4>
+                            <p>Mon-Fri: 9:00a.m.-5:00p.m.</p>
+                            <p>Sat: 10:00a.m.-5:00p.m.</p>
+                        </div>
+                    </div>
+                    <div class="contactBlock">
+                        <div class="contactBox">
+                            <h4>Get in touch</h4>
+                            <p>+91 8220019995</p>
+                            <p>merakiatelier023@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="companyBlock">
+                        <div class="companyBox">
+                            <h4>Company</h4>
+                            <ul>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrightsBody">
+                <div class="copyrightsBlock dflex">
+                    <div class="copyrightsBox">
+                        <p> Copyright @ 2025 <span>Meraki Emrovibes </span>All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

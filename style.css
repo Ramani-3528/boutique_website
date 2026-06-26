@@ -81,6 +81,13 @@ body{
   padding: 0rem 2rem;
 }
 
+.grid-4{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16rem;
+  padding: 0rem 2rem;
+}
+
 .dflex {
   display: flex;
   align-items: center;
@@ -143,12 +150,18 @@ h2 {
   margin: auto;
 }
 
-h3 {
+h3, h4 {
   font-family: var(--ffSecondary);
   font-size: 3rem;
   font-weight: 600;
   font-style: italic;
   color: var(--primarycolor);
+}
+
+h4{
+  font-size: 2.5rem;
+  color: var(--textColor);
+  text-align: start;
 }
 
 p {
@@ -193,10 +206,6 @@ button span {
 
 button::before {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   margin: auto;
   content: '';
   border-radius: 50%;
@@ -270,8 +279,9 @@ button:hover::before {
 }
 
 .navLinksBox ul li a:hover {
-  box-shadow: 0 0 15px rgba(212, 145, 243, 0.886), 0 0 25px rgba(117, 25, 154, 0.718), 0 0 35px rgba(80, 28, 117, 0.685);
+  box-shadow: 0 0 15px rgba(230, 190, 248, 0.886), 0 0 25px rgba(190, 47, 247, 0.505), 0 0 35px rgba(177, 90, 239, 0.3);
 }
+
 #iconToggle {
   cursor: pointer;
   display: none;
@@ -290,7 +300,7 @@ button:hover::before {
 
 /* Hero */
 .hero {
-  background: linear-gradient(#e1c3ee4c), url(./assets/images/background2.jpg);
+  background-color: var(--lightColor);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -388,7 +398,7 @@ button:hover::before {
 }
 
 .costumeBody figure img {
-  width: 380px;
+  width: 350px;
   height: auto;
   padding: 2rem 1rem;  
   /* box-shadow: 3px 5px 10px var(--darkColor); */
@@ -407,20 +417,37 @@ button:hover::before {
 
 .membersBody figure img {
   width: auto;
-  height: 280px;
+  height: 240px;
   padding: 0rem 2rem;
 }
 /* Designers */
 
 /* Footer */
-.copyrights {
+.details {
   background-color: var(--primarycolor);
   text-align: center;
-  padding: 2rem 0rem;
+  padding: 3rem 0rem;
 }
 
-.copyrightsBox p {
+.companyBox ul li{
+  font-family: var(--ffSecondary);
+  font-size: 1.8rem;
   color: var(--lightColor);
+  align-items: start;
+}
+
+.details p {
+  color: var(--lightColor);
+  text-align: start;
+}
+
+.copyrightsBox{
+  padding-top: 2rem;
+}
+
+.copyrightsBody{
+  border-top: 0.1rem solid var(--tertiararyColor);
+  margin: 2rem 7rem 0rem;
 }
 /* Footer */
 
