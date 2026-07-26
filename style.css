@@ -67,6 +67,10 @@ body{
   padding: 2rem 0rem;
 }
 
+.componentSpacing-2 {
+  padding: 6rem 0rem;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -86,6 +90,13 @@ body{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 16rem;
   padding: 0rem 2rem;
+}
+
+.grid-5{
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .dflex {
@@ -300,7 +311,7 @@ button:hover::before {
 
 /* Hero */
 .hero {
-  background-color: var(--lightColor);
+  background-color: var(--primarycolor);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -329,8 +340,18 @@ button:hover::before {
 }
 
 .heroImgBox img {
-  height: auto;
-  width: 350px;
+  height: 300px;
+  width: auto;
+}
+
+.bow-img{
+  height: 50px;
+  width: auto;
+}
+
+.heroImgBox img{
+  height: 530px;
+  width: auto;
 }
 @keyframes slideRight {
   from {
