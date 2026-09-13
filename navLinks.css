@@ -119,11 +119,6 @@ p {
   padding-bottom: 2rem;
 }
 
-.naviconBox {
-  font-size: 3rem;
-  /* color: var(--secondarycolor); */
-}
-
 /* Designers code*/
 .arpitaBox figure img,
 .rohanBox figure img,
@@ -161,22 +156,22 @@ input::placeholder {
   opacity: 1;
 }
 
-#statusMessage{
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 15px;
-    text-align: center;
-    color: #16a34a;
-    opacity: 0;
-    transition: all 0.4s ease;
+#statusMessage {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+  text-align: center;
+  color: #16a34a;
+  opacity: 0;
+  transition: all 0.4s ease;
 }
 
-#statusMessage.show{
-    opacity: 1;
+#statusMessage.show {
+  opacity: 1;
 }
 
-#statusMessage.error{
-    color: #e63946;
+#statusMessage.error {
+  color: #e63946;
 }
 
 /* Contact */
@@ -209,6 +204,10 @@ input::placeholder {
     padding: 0rem 0rem 2rem;
   }
 
+  .naviconBlock {
+    display: none ;
+  }
+
   .arpitaBox figure img,
   .rohanBox figure img,
   .meeraBox figure img {
@@ -233,6 +232,7 @@ input::placeholder {
   .contactBox {
     padding-bottom: 2rem;
   }
+  
   input {
     width: 34rem;
   }

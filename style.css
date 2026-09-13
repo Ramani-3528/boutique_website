@@ -151,12 +151,12 @@ h2 {
   font-size: 4rem;
   font-weight: 700;
   /* font-style: italic; */
-  color: var(--primarycolor);
-  /* text-shadow: 3px 2px 3px #dd99fc; */
+  color: var(--textColor);
+  text-shadow: 3px 2px 7px #3a2c0a;
 }
 
 .br-bottom {
-  border-bottom: 0.3rem solid var(--textColor);
+  border-bottom: 0.3rem solid var(--primarycolor);
   max-width: 10rem;
   margin: auto;
 }
@@ -541,6 +541,10 @@ button:hover::before {
   p {
     font-size: 1.6rem;
     padding: 0rem 0rem 2rem;
+  }
+
+  .naviconBlock {
+    display: none ;
   }
 
   .cardHeader figure img {
