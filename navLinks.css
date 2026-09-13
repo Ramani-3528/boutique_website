@@ -162,10 +162,10 @@ input::placeholder {
 }
 
 #statusMessage{
-    margin-top: 15px;
-    text-align: center;
     font-size: 16px;
     font-weight: 500;
+    margin-top: 15px;
+    text-align: center;
     color: #16a34a;
     opacity: 0;
     transition: all 0.4s ease;

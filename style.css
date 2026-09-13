@@ -143,7 +143,7 @@ h1 {
   font-size: 5rem;
   font-weight: 800;
   font-style: italic;
-  text-shadow: 2px 2px 7px #271032;
+  text-shadow: 2px 2px 5px #271032;
 }
 
 h2 {
@@ -192,14 +192,14 @@ li {
 
 button {
   font-family: var(--ffSecondary);
+  font-size: 17px;
+  font-weight: 600;
   background: #391849;
   position: relative;
   padding: 13px 15px;
   box-shadow: 2px 3px 5px;
   display: flex;
   align-items: center;
-  font-size: 17px;
-  font-weight: 600;
   cursor: pointer;
   border: none;
   border-radius: 25px;
@@ -212,7 +212,7 @@ button {
 }
 
 button span {
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 button::before {
@@ -247,23 +247,29 @@ button:hover::before {
 }
 
 .navContainer {
-  padding: 1rem 4rem;
+  padding: 2rem 0rem;
 }
 
 .navBox figure img {
   width: auto;
-  height: 60px;
+  height: 70px;
 }
 
-.naviconBox {
+.naviconBlock{
+  margin-left: 7rem;
+}
+
+.naviconBox a {
   font-size: 3rem;
   color: var(--lightColor);
+  padding: 0px 2px;
+  text-decoration: none;
 }
 
 .navLinksBox ul li a {
   font-family: var(--ffSecondary);
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding: 0rem 2rem;
   color: var(--lightColor);
   position: relative;
@@ -311,11 +317,11 @@ button:hover::before {
 
 /* Hero */
 .hero {
-  background-color: var(--primarycolor);
-  background-size: cover;
+  background-color: var(--lightColor);
+  /* background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .heroTextBox p {
@@ -334,8 +340,8 @@ button:hover::before {
 }
 
 .heroTextBox button {
-  opacity: 0;
-  transform: translateX(-150px);
+  /* opacity: 0;
+  transform: translateX(-150px); */
   animation: slideRight 2s ease forwards;
 }
 
