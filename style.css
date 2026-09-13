@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Story+Script&display=swap");
 
 * {
@@ -15,7 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   /* background-color: #795690; */
   /* background-size: cover;
   background-position: center;
@@ -85,14 +85,14 @@ body{
   padding: 0rem 2rem;
 }
 
-.grid-4{
+.grid-4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 16rem;
   padding: 0rem 2rem;
 }
 
-.grid-5{
+.grid-5 {
   display: grid;
   grid-template-columns: 0.4fr 0.6fr 1fr;
   gap: 1rem;
@@ -143,7 +143,7 @@ h1 {
   font-size: 5rem;
   font-weight: 800;
   font-style: italic;
-  text-shadow: 2px 2px 5px #271032;
+  text-shadow: 2px 2px 5px #271032a6;
 }
 
 h2 {
@@ -152,7 +152,7 @@ h2 {
   font-weight: 700;
   /* font-style: italic; */
   color: var(--textColor);
-  text-shadow: 3px 2px 7px #3a2c0a;
+  text-shadow: 3px 2px 7px #3d2b02c9;
 }
 
 .br-bottom {
@@ -161,7 +161,8 @@ h2 {
   margin: auto;
 }
 
-h3, h4 {
+h3,
+h4 {
   font-family: var(--ffSecondary);
   font-size: 3rem;
   font-weight: 600;
@@ -169,7 +170,7 @@ h3, h4 {
   color: var(--primarycolor);
 }
 
-h4{
+h4 {
   font-size: 2.5rem;
   color: var(--textColor);
   text-align: start;
@@ -218,7 +219,7 @@ button span {
 button::before {
   position: absolute;
   margin: auto;
-  content: '';
+  content: "";
   border-radius: 50%;
   display: block;
   width: 20em;
@@ -237,7 +238,6 @@ button:hover {
 button:hover::before {
   box-shadow: inset 0 0 0 10em rgb(252, 254, 255);
 }
- 
 
 /* NavBar*/
 .navBar {
@@ -255,7 +255,7 @@ button:hover::before {
   height: 60px;
 }
 
-.naviconBlock{
+.naviconBlock {
   margin-left: 7rem;
 }
 
@@ -296,7 +296,8 @@ button:hover::before {
 }
 
 .navLinksBox ul li a:hover {
-  box-shadow: 0 0 15px rgba(230, 190, 248, 0.886), 0 0 25px rgba(190, 47, 247, 0.505), 0 0 35px rgba(177, 90, 239, 0.3);
+  box-shadow: 0 0 15px rgba(230, 190, 248, 0.886),
+    0 0 25px rgba(190, 47, 247, 0.505), 0 0 35px rgba(177, 90, 239, 0.3);
 }
 
 #iconToggle {
@@ -350,12 +351,12 @@ button:hover::before {
   width: auto;
 }
 
-.bow-img{
+.bow-img {
   height: 50px;
   width: auto;
 }
 
-.heroImgBox img{
+.heroImgBox img {
   height: 530px;
   width: auto;
 }
@@ -373,7 +374,7 @@ button:hover::before {
 /* Hero */
 
 /* Accessories */
-.accessories{
+.accessories {
   background-color: var(--secondarycolor);
 }
 
@@ -420,21 +421,20 @@ button:hover::before {
 /* Accessorise */
 
 /* Collections */
-.collections{
+.collections {
   background-color: var(--tertiararyColor);
 }
 
 .costumeBody figure img {
   width: 350px;
   height: auto;
-  padding: 2rem 1rem;  
+  padding: 2rem 1rem;
   /* box-shadow: 3px 5px 10px var(--darkColor); */
-
 }
 /* Collections */
 
 /* Designers */
-.designers{
+.designers {
   background-color: var(--lightColor);
 }
 .membersBody {
@@ -452,15 +452,18 @@ button:hover::before {
 /* Footer */
 .details {
   background-color: var(--primarycolor);
-  text-align: center;
+  /* text-align: center; */
   padding: 3rem 0rem;
 }
 
-.companyBox ul li{
+.companyBox a {
   font-family: var(--ffSecondary);
   font-size: 1.8rem;
   color: var(--lightColor);
+  display: flex;
+  flex-direction: row;
   text-align: start;
+  text-decoration: none;
 }
 
 .details p {
@@ -468,11 +471,11 @@ button:hover::before {
   text-align: start;
 }
 
-.copyrightsBox{
+.copyrightsBox {
   padding-top: 2rem;
 }
 
-.copyrightsBody{
+.copyrightsBody {
   border-top: 0.1rem solid var(--tertiararyColor);
   margin: 2rem 7rem 0rem;
 }
@@ -544,7 +547,7 @@ button:hover::before {
   }
 
   .naviconBlock {
-    display: none ;
+    display: none;
   }
 
   .cardHeader figure img {

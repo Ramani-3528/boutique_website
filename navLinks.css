@@ -205,7 +205,7 @@ input::placeholder {
   }
 
   .naviconBlock {
-    display: none ;
+    display: none;
   }
 
   .arpitaBox figure img,
@@ -232,7 +232,7 @@ input::placeholder {
   .contactBox {
     padding-bottom: 2rem;
   }
-  
+
   input {
     width: 34rem;
   }

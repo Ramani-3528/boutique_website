@@ -13,31 +13,31 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
         mobile: document.getElementById("mobile").value,
         message: document.getElementById("message").value
     })
-    .then(function () {
+        .then(function () {
 
-        statusMessage.textContent = "Thanks for reaching out — I'll get back to you soon!";
-        statusMessage.classList.remove("error");
-        statusMessage.classList.add("show");
+            statusMessage.textContent = "Thanks for reaching out — I'll get back to you soon!";
+            statusMessage.classList.remove("error");
+            statusMessage.classList.add("show");
 
-        document.getElementById("contactForm").reset();
+            document.getElementById("contactForm").reset();
 
-        setTimeout(() => {
+            setTimeout(() => {
+                statusMessage.classList.remove("show");
+                statusMessage.textContent = "";
+            }, 5000);
+
+        })
+        .catch(function (error) {
+
+            statusMessage.textContent = "Failed to send message. Please try again.";
             statusMessage.classList.remove("show");
-            statusMessage.textContent = "";
-        }, 5000);
+            statusMessage.classList.add("error", "show");
 
-    })
-    .catch(function (error) {
+            console.log(error);
 
-        statusMessage.textContent = "Failed to send message. Please try again.";
-        statusMessage.classList.remove("show");
-        statusMessage.classList.add("error", "show");
-
-        console.log(error);
-
-        setTimeout(() => {
-            statusMessage.classList.remove("show", "error");
-            statusMessage.textContent = "";
-        }, 5000);
-    });
+            setTimeout(() => {
+                statusMessage.classList.remove("show", "error");
+                statusMessage.textContent = "";
+            }, 5000);
+        });
 });
