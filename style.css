@@ -64,7 +64,7 @@ body{
 }
 
 .componentSpacing {
-  padding: 2rem 0rem;
+  padding: 2.5rem 0rem;
 }
 
 .componentSpacing-2 {
@@ -252,7 +252,7 @@ button:hover::before {
 
 .navBox figure img {
   width: auto;
-  height: 70px;
+  height: 60px;
 }
 
 .naviconBlock{
