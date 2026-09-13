@@ -460,7 +460,7 @@ button:hover::before {
   font-family: var(--ffSecondary);
   font-size: 1.8rem;
   color: var(--lightColor);
-  align-items: start;
+  text-align: start;
 }
 
 .details p {
