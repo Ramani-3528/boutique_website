@@ -148,7 +148,7 @@ input {
 
 input:focus {
   outline: var(--tertiararyColor);
-  border: 0.4rem solid var(--tertiararyColor);
+  border: 0.4rem solid var(--textColor);
 }
 
 input::placeholder {
